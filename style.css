@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(49, 48, 48);
+}
+
+p, h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    color: aliceblue;
+}
+
+header {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(22, 37, 255);
+}
+
+header > h1 {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+input {
+    padding: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    border: 2px solid rgb(49, 48, 48);
+}
+
+input:hover {
+    border: 2px solid rgb(22, 22, 255);
+}
+
+
+textarea {
+    resize: none;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: none;
+}
+
+#container {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 17rem;
+    height: auto;
+}
+
+#enviar {
+    width: 9.6rem;
+    background-color: blue;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    border: 2px solid blue;
+}
+
+#enviar:hover {
+    background-color: aliceblue;
+    color: blue;
+}
+
+#container-2 {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 17rem;
+}
+
+#container-2 > #resposta {
+    background-color: aliceblue;
+    width: 20rem;
+    height: auto;
+    padding: 0.7rem;
+    border-radius: 8px;
+}
+
+#resposta > p {
+    color: rgb(0, 17, 255);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#alerta {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff0000;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-weight: 600;
+}
+
+.oculto {
+    display: none;
+}
+
+#final {
+    margin-top: 1rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#final > p {
+    font-size: 1rem;
+    font-weight: 400;
+}
